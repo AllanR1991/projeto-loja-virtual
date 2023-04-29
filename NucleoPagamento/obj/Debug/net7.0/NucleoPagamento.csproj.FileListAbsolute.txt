@@ -1,0 +1,15 @@
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.exe
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.deps.json
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.runtimeconfig.json
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.dll
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.pdb
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.AssemblyReference.cache
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfoInputs.cache
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfo.cs
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.CoreCompileInputs.cache
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.dll
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\refint\NucleoPagamento.dll
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.pdb
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.genruntimeconfig.cache
+C:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\ref\NucleoPagamento.dll

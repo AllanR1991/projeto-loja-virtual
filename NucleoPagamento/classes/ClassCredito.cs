@@ -1,6 +1,6 @@
 namespace NucleoPagamento.classes
 {
-    public class ClassCredito : ClassCartao;
+    public class ClassCredito : ClassCartao
     {
         static string PerguntaString(string pergunta)
         {
@@ -41,7 +41,7 @@ namespace NucleoPagamento.classes
 
         public float valor = 200;
         /*Acessando Metodo da classe abstrata*/
-        public void Pagar(){
+        public override void Pagar(){
             
             int parcelas;
             int minParcelas = 1;
@@ -69,7 +69,7 @@ namespace NucleoPagamento.classes
 parcelas = PerguntaInt(@$"
 Em quantas vezes deseja pagar o valor de {valor} : 
 ");
-            }while(parcelas<minParcelas && parcelas>maxParcelas);         
+            }while(parcelas<minParcelas || parcelas>maxParcelas);         
             
             if(parcelas<=6){
                 ExibeMensagemPulandoLinha(@$"O valor de {valor} parcelado em {parcelas}, da um total a pagar de {valor*1.05}");
