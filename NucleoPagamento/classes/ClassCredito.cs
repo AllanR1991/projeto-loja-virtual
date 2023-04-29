@@ -13,8 +13,7 @@ namespace NucleoPagamento.classes
             Console.WriteLine(pergunta);
             return char.Parse(Console.ReadLine());
         }
-
-        static int PerguntaInt(string pergunta)
+       static int PerguntaInt(string pergunta)
         {
             Console.WriteLine(pergunta);
             return int.Parse(Console.ReadLine());
@@ -53,22 +52,27 @@ namespace NucleoPagamento.classes
             }else{
                 ExibeMensagem(@$"
 
-*************************************
-*                                   *
-*          Juros do Cartão          *
-*                                   *
-*  Pagamento em até 6X juros de 5%  *   
-*                                   *   
-*  Pagamento em até 7X ate 12X      *
-*  juros de 8%                      *
-*                                   *
-*************************************
+*****************************************
+*                                       *
+*          Juros do Cartão              *
+*                                       *
+* 1)Pagamento em até 6X no cartao com   *    
+*   juros de 5%.                        *   
+*                                       *
+* 2) Pagamento em 7X ate 12X no cartao  *
+*    com juros de 8%                    *
+*                                       *
+*****************************************
 
 ");
             do{
 parcelas = PerguntaInt(@$"
 Em quantas vezes deseja pagar o valor de {valor} : 
-");
+"); 
+            if(parcelas<minParcelas||parcelas>maxParcelas){
+                Console.ForegroundColor = ConsoleColor.Red;
+                ExibeMensagemPulandoLinha("A ");
+            }
             }while(parcelas<minParcelas || parcelas>maxParcelas);         
             
             if(parcelas<=6){
