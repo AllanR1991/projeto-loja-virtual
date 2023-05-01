@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using NucleoPagamento.classes;
 using NucleoPagamento;
 
@@ -118,3 +119,18 @@ do
     }
 
 } while (opcao !="5");
+=======
+﻿using NucleoPagamento;
+using NucleoPagamento.classes;
+
+ClassPagamento c1 = new ClassPagamento();
+
+ Console.WriteLine(c1.Cancelar());
+ 
+
+
+
+
+
+
+>>>>>>> Kamille
