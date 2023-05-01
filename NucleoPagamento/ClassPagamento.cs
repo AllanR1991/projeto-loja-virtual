@@ -2,28 +2,19 @@ namespace NucleoPagamento
 {
     public class ClassPagamento
     {
-        private static DateTime Now;
+        public DateTime Data { get; set; }
 
         public float valor;
 
-        public void Cancelar(string resposta)
+        public string Cancelar()
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"Deseja Cancelar a operação? sim/não");
-            Console.ResetColor();
-            resposta = Console.ReadLine();
 
-            if (resposta == "sim")
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Operação cancelada");
-            }
-
-        
-
-            
+            Console.ForegroundColor = ConsoleColor.Red;
+            Data = DateTime.Now;
+            return @$"
+            Operação cancelada 
+            {Data}";
         }
-
 
     }
 }
