@@ -7,6 +7,6 @@ namespace NucleoPagamento.classes
 {
     public class NewClass
     {
-        
+    
     }
 }

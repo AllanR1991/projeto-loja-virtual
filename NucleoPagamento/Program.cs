@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using NucleoPagamento;
+using static NucleoPagamento.ClassPagamento;
+ClassPagamento c1 = new ClassPagamento();
+
+ c1.Cancelar();
+
+
+
+
+
+
