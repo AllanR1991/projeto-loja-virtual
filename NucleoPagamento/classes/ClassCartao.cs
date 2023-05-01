@@ -50,18 +50,15 @@ namespace NucleoPagamento.classes
         {
             Console.Write(texto);
         }
-        public string bandeira { get; set; }
-        public string NumeroCartao { get; set; }
-        public string Titular { get; set; }
-        public string Cvv { get; set; }
 
+        public string Bandeira;
+        public string NumeroCartao;
+        public string Titular; 
+        public string Cvv;
 
-        public abstract void Pagar();
-       
-    
+        public abstract void Pagar();  
         public string SalvarCartao()
         {
-        
             return "";
         }
 

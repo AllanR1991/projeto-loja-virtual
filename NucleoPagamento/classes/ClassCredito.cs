@@ -40,7 +40,7 @@ namespace NucleoPagamento.classes
         /*Atributo*/
         private float Limite = 6000;
 
-        public float valor = 200;
+        public float valor = 6000;
         /*Acessando Metodo da classe abstrata*/
         public override void Pagar()
         {
@@ -50,12 +50,21 @@ namespace NucleoPagamento.classes
             int maxParcelas = 12;
 
 
+
+            Bandeira = PerguntaString("Digite a bandeira do seu Cartao : ");
+            NumeroCartao = PerguntaString("Digite o Numero do Cartao : ");
+            Titular = PerguntaString("Digite o nome do Titular da conta : ");
+            Cvv = PerguntaString("Digite o codigo CVV do cartao : ");
+
             if (valor > Limite)
             {
-                ExibeMensagemPulandoLinha("O Srº(ª) não possui mais limite para compras.");
+                Console.ForegroundColor = ConsoleColor.Red;
+                ExibeMensagemPulandoLinha("\nO Srº(ª) não possui limite suficiente no cartão para compras.\n");
+                Console.ResetColor();
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
                 ExibeMensagem(@$"
 
 *****************************************
@@ -71,12 +80,11 @@ namespace NucleoPagamento.classes
 *****************************************
 
 ");
+                Console.ResetColor();
 
                 do
                 {
-                    /* parcelas = PerguntaInt(@$"
-                    Em quantas vezes deseja pagar o valor de {valor} : 
-                    "); */
+                    
                     int.TryParse(PerguntaString(@$"
 Em quantas vezes deseja pagar o valor de {valor} :
 "), out parcelas);
@@ -99,19 +107,19 @@ Em quantas vezes deseja pagar o valor de {valor} :
                 {
 
                     ExibeMensagemPulandoLinha(@$"
-O valor de {(valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(valor * 1.05).ToString("C", new CultureInfo("pt-br"))}.
+O valor de {(valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(valor * 1.05).ToString("C", new CultureInfo("pt-br"))}, sendo cada parcela no valor de {((valor * 1.05) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
 ");
                 }
                 else
                 {
                     ExibeMensagemPulandoLinha(@$"
-O valor de {(valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(valor * 1.08).ToString("C", new CultureInfo("pt-br"))}.
+O valor de {(valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(valor * 1.08).ToString("C", new CultureInfo("pt-br"))}, sendo cada parcela no valor de {((valor * 1.08) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
 ");
                 }
 
             }
 
-        }
+        } 
 
     }
 }
