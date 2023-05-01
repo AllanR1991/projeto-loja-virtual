@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿
 ﻿using NucleoPagamento.classes;
 using NucleoPagamento;
 
@@ -37,8 +37,6 @@ static void ExibeMensagem(string texto)
     Console.Write(texto);
 }
 
-/* Criação da função*/
-
 static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
 {
     ExibeMensagem(texto);
@@ -48,7 +46,15 @@ static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
         Thread.Sleep(tempo);
     }
 }
-/*Chamada da Função*/
+
+
+
+
+
+
+
+/*************************************************************************************************************************/
+
 
 
 
@@ -65,7 +71,11 @@ ExibeMensagemPulandoLinha(@"
 **************************
 ");
 
-BarraCarregamento("Processando", 5, 1000);
+/* BarraCarregamento("Processando", 5, 1000); */
+ 
+credito.Valor  = PerguntaFloat("Informe o valor da compra : ");
+
+/* BarraCarregamento("Aguarde", 10, 1000); */
 
 do
 {
@@ -97,21 +107,21 @@ do
     switch (opcao)
     {
         case "1":
-            /* Boleto.Registrar(); */
+            //Boleto.Registrar();
             break;
         case "2":
             credito.Pagar();
             break;
         case "3":
-            /* Debito.Pagar(); */
+            //Debito.Pagar();
             break;
         case "4":
-            /* ExibeMensagemPulandoLinha(Pagamento.Cancelar()); */
+            //ExibeMensagemPulandoLinha(Pagamento.Cancelar());
             break;
         case "5":
             ExibeMensagemPulandoLinha("Obrigado por utilizar nosso sistema, até logo.");
-            BarraCarregamento("Deslogando da conta", 5, 1000);
-            BarraCarregamento("Fechando o sistema", 5, 1000);
+            /* BarraCarregamento("Deslogando da conta", 5, 1000);
+            BarraCarregamento("Fechando o sistema", 5, 1000); */
             break;
         default:
             ExibeMensagemPulandoLinha("Nenhuma opção foi escolhida, favor escolher uma das seguintes opções");
@@ -119,18 +129,3 @@ do
     }
 
 } while (opcao !="5");
-=======
-﻿using NucleoPagamento;
-using NucleoPagamento.classes;
-
-ClassPagamento c1 = new ClassPagamento();
-
- Console.WriteLine(c1.Cancelar());
- 
-
-
-
-
-
-
->>>>>>> Kamille
