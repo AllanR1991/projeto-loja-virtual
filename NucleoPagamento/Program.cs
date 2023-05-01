@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using NucleoPagamento.classes;
+
+ClassBoleto boleto = new ClassBoleto();
+
+boleto.Registrar();
+

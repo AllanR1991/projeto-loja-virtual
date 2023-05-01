@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.exe
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.deps.json
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.runtimeconfig.json
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.dll
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\bin\Debug\net7.0\NucleoPagamento.pdb
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.dll
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\refint\NucleoPagamento.dll
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.pdb
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\ref\NucleoPagamento.dll
