@@ -9,12 +9,12 @@ namespace NucleoPagamento
         public string Cancelar()
         {
 
-            Console.ForegroundColor = ConsoleColor.Red;
             Data = DateTime.Now;
             return @$"
             Operação cancelada 
-            {Data}";
+            {Data}";   
         }
+        
 
     }
 }

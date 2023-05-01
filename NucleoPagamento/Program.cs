@@ -1,8 +1,10 @@
 ﻿using NucleoPagamento;
-using static NucleoPagamento.ClassPagamento;
+using NucleoPagamento.classes;
+
 ClassPagamento c1 = new ClassPagamento();
 
- c1.Cancelar();
+ Console.WriteLine(c1.Cancelar());
+ 
 
 
 
