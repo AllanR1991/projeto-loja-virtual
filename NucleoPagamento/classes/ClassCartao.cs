@@ -50,7 +50,7 @@ namespace NucleoPagamento.classes
         {
             Console.Write(texto);
         }
-        public string bandeira;
+        public string Bandeira;
         public string NumeroCartao;
         public string Titular;
         public string Cvv;
@@ -61,17 +61,18 @@ namespace NucleoPagamento.classes
 
         public string SalvarCartao()
         {
-            return
-            PerguntaString(bandeira);
-            
-            PerguntaString(NumeroCartao);
+            return @$"
+Dados salvos com sucesso!
 
-            PerguntaString(Titular);
+Bandeira: {Bandeira}
 
-            PerguntaString(Cvv);
+Numero do cartao: {NumeroCartao}
 
-            ExibeMensagem("Cartão salvo");
-            
+Titular: {Titular}
+
+Cvv: {Cvv}
+
+";
             
             
         }
