@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NucleoPagamento
-<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\
-=======
-build_property.ProjectDir = c:\Users\41017653836\Desktop\projeto-loja-virtual\NucleoPagamento\
->>>>>>> ee57c86fb7e90e11a8831710d4ecee15080555dd
