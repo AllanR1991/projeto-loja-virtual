@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "TNtXZ21XxIlUZB7PKnVmEGjOsDmZgAX0aD3qsnp/MSDTZkkpGJN3uptEWckyk755D+tLG1Tg89Y9I7eG2RPU9g==",
   "success": true,
   "projectFilePath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+=======
+  "dgSpecHash": "fY8FtVaVOi67PHkQpILaA9ujDHaBuoMHgC6/pu3BuwY3Qgmpe4ksgZ+Wp+lf7YwMfsjD1SuA+/Okf69wUkolkA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+>>>>>>> Kamille
   "expectedPackageFiles": [],
   "logs": []
 }
