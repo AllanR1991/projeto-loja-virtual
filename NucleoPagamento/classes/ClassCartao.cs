@@ -15,11 +15,8 @@ using System.Threading.Tasks;
 
 namespace NucleoPagamento.classes
 {
-<<<<<<< HEAD
-    public abstract class ClassCartao:ClassPagamento
-=======
     public abstract class ClassCartao : ClassPagamento
->>>>>>> Evelyn
+
     {
         static string PerguntaString(string pergunta)
         {
@@ -57,7 +54,7 @@ namespace NucleoPagamento.classes
 
         public string Bandeira;
         public string NumeroCartao;
-        public string Titular; 
+        public string Titular;
         public string Cvv;
 
         public abstract void Pagar();
@@ -77,10 +74,6 @@ Titular: {Titular}
 Cvv: {Cvv}
 
 ";
-            
-
         }
-
-
     }
 }

@@ -45,16 +45,17 @@ namespace NucleoPagamento.classes
        
         public override void Pagar()
         {
-            ExibeMensagemPulandoLinha($"O valor total a se pago a vista é de: {Valor}");
+            
         if (Saldo >= Valor )
         {
-            Console.WriteLine($"O valor {(Valor).ToString("C", new CultureInfo("pt-br"))} vista é {(Valor).ToString("C", new CultureInfo("pt-br"))} ");
-            
+            Console.WriteLine($"O valor a pagar é de {(Valor).ToString("C", new CultureInfo("pt-br"))} sem desconto");
         }
         else
         {
-            Console.WriteLine($"Pagamento invalido");
-            
+            ExibeMensagem($"Não é possivel realizar o pagamento com cartão de débito"); 
+            Console.ForegroundColor = ConsoleColor.Red;
+            ExibeMensagem("saldo insuficiente.");
+            Console.ResetColor();
         }
         
         } 

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿
-=======
 ﻿﻿﻿using NucleoPagamento.classes;
 using NucleoPagamento;
 
@@ -77,17 +73,11 @@ ExibeMensagemPulandoLinha(@"
 /* BarraCarregamento("Processando", 5, 1000); */
  
 credito.Valor = boleto.Valor = PerguntaFloat("Informe o valor da compra : ");
-=======
-using NucleoPagamento;
-using NucleoPagamento.classes;
 
-ClassDebito c1 = new ClassDebito();
-c1.Valor = 3876;
->>>>>>> Evelyn
 
 /* BarraCarregamento("Aguarde", 10, 1000); */
 
-<<<<<<< HEAD
+
 do
 {
     opcao = PerguntaString(@"
@@ -124,10 +114,10 @@ do
             credito.Pagar();
             break;
         case "3":
-            //Debito.Pagar();
+            debito.Pagar();
             break;
         case "4":
-            //ExibeMensagemPulandoLinha(Pagamento.Cancelar());
+            ExibeMensagemPulandoLinha(Pagamento.Cancelar());
             break;
         case "5":
             ExibeMensagemPulandoLinha("Obrigado por utilizar nosso sistema, até logo.");
@@ -140,8 +130,3 @@ do
     }
 
 } while (opcao !="5");
-
->>>>>>> origin/Allan
-=======
-c1.Pagar();
->>>>>>> Evelyn
