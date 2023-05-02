@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "p+Tyo0cmXsNbhSQT3T7w9vLc/PM+0j43c7tjCC3HIeskD1KcZsbQfTba9RRXSQ5BJChBTtnwsp4D/FKjYY620g==",
   "success": true,
   "projectFilePath": "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
@@ -9,6 +10,18 @@
   "success": true,
   "projectFilePath": "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
 >>>>>>> origin/Kamille
+=======
+  "dgSpecHash": "nHSnhInw6lFmy9BSuTttzboNT3TB5NM9Suq00lCd6zpxjK2KtJtQjQZSGRPLww/jIunRa16Qd6qhkYfGLQYA3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+>>>>>>> Evelyn
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

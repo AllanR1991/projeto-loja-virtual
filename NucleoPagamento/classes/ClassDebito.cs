@@ -1,25 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-// Atributos públicos:
-// Bandeira: string;
-// NumeroCartao: string
-// Titular: string
-// Cvv: string
-
-// Métodos:
-// Pagar(): void;
-// SalvarCartao(): string;
+using System.Globalization;
 
 namespace NucleoPagamento.classes
 {
-<<<<<<< HEAD
-    public abstract class ClassCartao:ClassPagamento
-=======
-    public abstract class ClassCartao : ClassPagamento
->>>>>>> Evelyn
+    public class ClassDebito: ClassCartao
     {
         static string PerguntaString(string pergunta)
         {
@@ -55,32 +38,28 @@ namespace NucleoPagamento.classes
             Console.Write(texto);
         }
 
-        public string Bandeira;
-        public string NumeroCartao;
-        public string Titular; 
-        public string Cvv;
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        public abstract void Pagar();
+        private float Saldo = 2356;
 
-
-        public string SalvarCartao()
+       
+        public override void Pagar()
         {
-            return @$"
-Dados salvos com sucesso!
-
-Bandeira: {Bandeira}
-
-Numero do cartao: {NumeroCartao}
-
-Titular: {Titular}
-
-Cvv: {Cvv}
-
-";
+            ExibeMensagemPulandoLinha($"O valor total a se pago a vista é de: {Valor}");
+        if (Saldo >= Valor )
+        {
+            Console.WriteLine($"O valor {(Valor).ToString("C", new CultureInfo("pt-br"))} vista é {(Valor).ToString("C", new CultureInfo("pt-br"))} ");
             
-
         }
+        else
+        {
+            Console.WriteLine($"Pagamento invalido");
+            
+        }
+        
+        } 
 
+    
 
     }
 }

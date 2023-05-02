@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {}
   },
   "projects": {
@@ -32,6 +33,22 @@
         "configFilePaths": [
           "C:\\Users\\47766876825\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> origin/Kamille
+=======
+    "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+        "projectName": "NucleoPagamento",
+        "projectPath": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+        "packagesPath": "C:\\Users\\53143873876\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\53143873876\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Evelyn
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
