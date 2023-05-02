@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "MsjXzUzWE/jPNOLOs2vyVcrWp1j0PhcjfDPfpQKKhyfCnGAYbp+WLAJmQ49L5216cCO0/AT502EPjiB/rkrcJg==",
+  "dgSpecHash": "p+Tyo0cmXsNbhSQT3T7w9vLc/PM+0j43c7tjCC3HIeskD1KcZsbQfTba9RRXSQ5BJChBTtnwsp4D/FKjYY620g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Nova pasta\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
-=======
-  "dgSpecHash": "TNtXZ21XxIlUZB7PKnVmEGjOsDmZgAX0aD3qsnp/MSDTZkkpGJN3uptEWckyk755D+tLG1Tg89Y9I7eG2RPU9g==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
->>>>>>> Caua
-=======
-  "dgSpecHash": "M0oXPgT8570kJS0r1JNhWbThzMsq2J2wF3YmoZiwCkr+PhlT9fR+lufStEvtFp6gz5VdkJhOcbR1RXQYuOezmQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\32599952859\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
->>>>>>> Everton
+  "projectFilePath": "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace NucleoPagamento.classes
 {
-    public class ClassBoleto 
+    public class ClassBoleto : ClassPagamento
     {
 
         //Criação de Propriedades
          private  string CodigoDeBarra;
-         
-
-        public float Valor = 1015f;
 
         //Criação da função
        

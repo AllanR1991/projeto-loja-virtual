@@ -8,12 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NucleoPagamento
-<<<<<<< HEAD
-<<<<<<< HEAD
-build_property.ProjectDir = c:\Users\41017653836\Desktop\projeto-loja-virtual\NucleoPagamento\
-=======
-build_property.ProjectDir = c:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\
->>>>>>> Caua
-=======
-build_property.ProjectDir = c:\Users\32599952859\Desktop\projeto-loja-virtual\NucleoPagamento\
->>>>>>> Everton
+build_property.ProjectDir = C:\Users\41017653836\Desktop\projeto-loja-virtual\NucleoPagamento\

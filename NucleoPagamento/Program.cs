@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿﻿using NucleoPagamento.classes;
+﻿﻿﻿using NucleoPagamento.classes;
 using NucleoPagamento;
 
 
@@ -59,7 +58,7 @@ static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
 
 
 ClassCredito credito = new ClassCredito();
-
+ClassBoleto boleto = new ClassBoleto();
 string opcao;
 
 ExibeMensagemPulandoLinha(@"
@@ -73,7 +72,7 @@ ExibeMensagemPulandoLinha(@"
 
 /* BarraCarregamento("Processando", 5, 1000); */
  
-credito.Valor = debito.Valor = boleto.Valor = PerguntaFloat("Informe o valor da compra : ");
+credito.Valor = boleto.Valor = PerguntaFloat("Informe o valor da compra : ");
 
 /* BarraCarregamento("Aguarde", 10, 1000); */
 
@@ -107,7 +106,7 @@ do
     switch (opcao)
     {
         case "1":
-            //Boleto.Registrar();
+            boleto.Registrar();
             break;
         case "2":
             credito.Pagar();
@@ -129,10 +128,4 @@ do
     }
 
 } while (opcao !="5");
-=======
-﻿using NucleoPagamento.classes;
 
-ClassBoleto boleto = new ClassBoleto();
-
-boleto.Registrar();
->>>>>>> Everton
