@@ -1,6 +1,4 @@
-﻿
-<<<<<<< HEAD
-﻿using NucleoPagamento.classes;
+﻿﻿using NucleoPagamento.classes;
 using NucleoPagamento;
 
 
@@ -130,6 +128,3 @@ do
     }
 
 } while (opcao !="5");
-=======
-
->>>>>>> Caua
