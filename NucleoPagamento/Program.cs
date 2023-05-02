@@ -3,4 +3,3 @@
 ClassBoleto boleto = new ClassBoleto();
 
 boleto.Registrar();
-

@@ -6,32 +6,34 @@ using System.Threading.Tasks;
 
 namespace NucleoPagamento.classes
 {
-    public class ClassBoleto
+    public class ClassBoleto 
     {
 
         //Criação de Propriedades
-         private  string codigoDeBarra;
+         private  string CodigoDeBarra;
          
 
-        public float valor = 1015f;
+        public float Valor = 1015f;
 
         //Criação da função
        
         public void Registrar()
     {
-        float valorDesc = valor * 0.88f;
-        Console.WriteLine ($"O valor do seu boleto com 12% de desconto é {(valorDesc).ToString("C", new CultureInfo("pt-br"))}");  
+        float ValorDesc = Valor * 0.88f;
+        Console.WriteLine ($"O valor do seu boleto com 12% de desconto é {(ValorDesc).ToString("C", new CultureInfo("pt-br"))}");  
 
         Console.WriteLine($" ");
            
-        Random codigo = new Random();
-        int cod = codigo.Next(10000,50000);
-        int cod2 = codigo.Next(100000,500000);
-        int cod3 = codigo.Next(10000000,500000000);
+        Random Codigo = new Random();
+        int Cod = Codigo.Next(10000,50000);
+        int Cod2 = Codigo.Next(100000,500000);
+        int Cod3 = Codigo.Next(10000000,500000000);
 
         Console.WriteLine($"Código de barras do boleto: ");
         
-        Console.WriteLine($"{cod}.{cod} {cod}.{cod2} {cod}.{cod2} 9 {cod3}{valorDesc}");
+        CodigoDeBarra = $"{Cod}.{Cod} {Cod}.{Cod2} {Cod}.{Cod2} 9 {Cod3}{(ValorDesc).ToString().Replace(",","")}";
+        Console.WriteLine($"{CodigoDeBarra}");
+        
        
     }
     
