@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace NucleoPagamento.classes
 {
-    public abstract class ClassDebito: ClassPagamento;
+    public abstract class ClassDebito: ClassCartao
     {
         static string PerguntaString(string pergunta)
         {
