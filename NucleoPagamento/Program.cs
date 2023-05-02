@@ -73,7 +73,7 @@ ExibeMensagemPulandoLinha(@"
 
 /* BarraCarregamento("Processando", 5, 1000); */
  
-credito.Valor  = PerguntaFloat("Informe o valor da compra : ");
+credito.Valor = debito.Valor = boleto.Valor = PerguntaFloat("Informe o valor da compra : ");
 
 /* BarraCarregamento("Aguarde", 10, 1000); */
 
