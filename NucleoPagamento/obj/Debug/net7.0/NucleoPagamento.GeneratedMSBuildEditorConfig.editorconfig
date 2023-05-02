@@ -9,7 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NucleoPagamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\allan\OneDrive\Área de Trabalho\projeto-loja-virtual\NucleoPagamento\
 =======
 build_property.ProjectDir = C:\Users\41017653836\Desktop\projeto-loja-virtual\NucleoPagamento\
 >>>>>>> origin/Allan
+=======
+build_property.ProjectDir = c:\Users\47766876825\Desktop\projeto-loja-virtual\NucleoPagamento\
+>>>>>>> origin/Kamille
