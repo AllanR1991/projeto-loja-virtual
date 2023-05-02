@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace NucleoPagamento.classes
 {
-    public abstract class ClassDebito
+    public abstract class ClassDebito: ClassPagamento;
     {
         static string PerguntaString(string pergunta)
         {
@@ -42,10 +42,15 @@ namespace NucleoPagamento.classes
         }
 
 
-        public float saldo { get; set; }
+        private float Saldo ;
 
-        public float valor { get; set; }
-
+       
+        public override float Pagar()
+        {
+            ExibeMensagemPulandoLinha($"O valor total a se pago a vista é de: {Valor}");
+        } 
+    
+        
       
 
 
