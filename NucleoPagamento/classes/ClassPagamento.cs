@@ -4,7 +4,7 @@ namespace NucleoPagamento
     {
         public DateTime Data { get; private set; } = DateTime.Now.Date;
 
-        public float valor;
+        public float Valor;
 
         public string Cancelar()
         {

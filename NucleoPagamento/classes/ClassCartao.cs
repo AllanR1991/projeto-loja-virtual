@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace NucleoPagamento.classes
 {
-    public abstract class ClassCartao
+    public abstract class ClassCartao : ClassPagamento
     {
         static string PerguntaString(string pergunta)
         {

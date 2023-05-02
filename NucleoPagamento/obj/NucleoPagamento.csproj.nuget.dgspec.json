@@ -1,37 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {}
+    "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {
+    "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+        "projectUniqueName": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
         "projectName": "NucleoPagamento",
-        "projectPath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
-        "packagesPath": "C:\\Users\\57256639813\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
+        "projectPath": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+        "packagesPath": "C:\\Users\\53143873876\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53143873876\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\57256639813\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
-        "projectName": "NucleoPagamento",
-        "projectPath": "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
-        "packagesPath": "C:\\Users\\47766876825\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47766876825\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\47766876825\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Kamille
+          "C:\\Users\\53143873876\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

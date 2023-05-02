@@ -1,6 +1,8 @@
+using System.Globalization;
+
 namespace NucleoPagamento.classes
 {
-    public abstract class ClassDebito: ClassCartao
+    public class ClassDebito: ClassCartao
     {
         static string PerguntaString(string pergunta)
         {
@@ -36,19 +38,28 @@ namespace NucleoPagamento.classes
             Console.Write(texto);
         }
 
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        private float Saldo ;
+        private float Saldo = 2356;
 
        
-        public override float Pagar()
+        public override void Pagar()
         {
             ExibeMensagemPulandoLinha($"O valor total a se pago a vista é de: {Valor}");
-        } 
-    
+        if (Saldo >= Valor )
+        {
+            Console.WriteLine($"O valor {(Valor).ToString("C", new CultureInfo("pt-br"))} vista é {(Valor).ToString("C", new CultureInfo("pt-br"))} ");
+            
+        }
+        else
+        {
+            Console.WriteLine($"Pagamento invalido");
+            
+        }
         
-      
+        } 
 
-
+    
 
     }
 }

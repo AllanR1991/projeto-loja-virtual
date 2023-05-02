@@ -1,22 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿
-=======
-﻿
-
->>>>>>> Caua
-=======
-﻿using NucleoPagamento;
+using NucleoPagamento;
 using NucleoPagamento.classes;
 
-ClassPagamento c1 = new ClassPagamento();
-
- Console.WriteLine(c1.Cancelar());
- 
+ClassDebito c1 = new ClassDebito();
+c1.Valor = 3876;
 
 
-
-
-
-
->>>>>>> Kamille
+c1.Pagar();
