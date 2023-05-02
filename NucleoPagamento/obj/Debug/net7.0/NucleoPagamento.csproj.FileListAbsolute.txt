@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.AssemblyReference.cache
 C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfoInputs.cache
@@ -13,3 +14,10 @@ C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\Nucleo
 C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.pdb
 C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.genruntimeconfig.cache
 C:\Users\allan\OneDrive\Área de Trabalho\Nova pasta\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\ref\NucleoPagamento.dll
+=======
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.AssemblyReference.cache
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfoInputs.cache
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfo.cs
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.CoreCompileInputs.cache
+>>>>>>> Caua

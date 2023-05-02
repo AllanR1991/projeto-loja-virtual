@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "MsjXzUzWE/jPNOLOs2vyVcrWp1j0PhcjfDPfpQKKhyfCnGAYbp+WLAJmQ49L5216cCO0/AT502EPjiB/rkrcJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Nova pasta\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+=======
+  "dgSpecHash": "TNtXZ21XxIlUZB7PKnVmEGjOsDmZgAX0aD3qsnp/MSDTZkkpGJN3uptEWckyk755D+tLG1Tg89Y9I7eG2RPU9g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+>>>>>>> Caua
   "expectedPackageFiles": [],
   "logs": []
 }

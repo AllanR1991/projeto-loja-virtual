@@ -8,11 +8,16 @@
     "net7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\allan\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\57256639813\\.nuget\\packages\\": {}
+>>>>>>> Caua
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Nova pasta\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
       "projectName": "NucleoPagamento",
       "projectPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Nova pasta\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
@@ -21,6 +26,17 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\allan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+      "projectName": "NucleoPagamento",
+      "projectPath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+      "packagesPath": "C:\\Users\\57256639813\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\57256639813\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\57256639813\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> Caua
       ],
       "originalTargetFrameworks": [
         "net7.0"

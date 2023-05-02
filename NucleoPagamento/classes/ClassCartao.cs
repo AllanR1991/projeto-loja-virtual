@@ -50,12 +50,20 @@ namespace NucleoPagamento.classes
         {
             Console.Write(texto);
         }
+<<<<<<< HEAD
+=======
+        public string Bandeira;
+        public string NumeroCartao;
+        public string Titular;
+        public string Cvv;
+>>>>>>> Caua
 
         public string Bandeira;
         public string NumeroCartao;
         public string Titular; 
         public string Cvv;
 
+<<<<<<< HEAD
         public abstract void Pagar();  
         public string SalvarCartao()
         {
@@ -65,6 +73,27 @@ Bnadeira: {Bandeira}
 Numero do Cartao: {NumeroCartao}
 Titular : {Titular}
 ";
+=======
+        public abstract void Pagar();
+
+
+        public string SalvarCartao()
+        {
+            return @$"
+Dados salvos com sucesso!
+
+Bandeira: {Bandeira}
+
+Numero do cartao: {NumeroCartao}
+
+Titular: {Titular}
+
+Cvv: {Cvv}
+
+";
+            
+            
+>>>>>>> Caua
         }
 
 
