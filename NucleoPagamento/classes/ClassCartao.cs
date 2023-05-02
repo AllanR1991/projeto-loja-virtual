@@ -61,14 +61,19 @@ namespace NucleoPagamento.classes
 
         public string SalvarCartao()
         {
+            return
             PerguntaString(bandeira);
+            
             PerguntaString(NumeroCartao);
+
             PerguntaString(Titular);
+
             PerguntaString(Cvv);
 
             ExibeMensagem("Cartão salvo");
-
-            return "";
+            
+            
+            
         }
 
 
