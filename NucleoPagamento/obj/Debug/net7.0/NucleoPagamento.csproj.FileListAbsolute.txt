@@ -1,0 +1,5 @@
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.AssemblyReference.cache
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfoInputs.cache
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.AssemblyInfo.cs
+C:\Users\57256639813\Desktop\projeto-loja-virtual\NucleoPagamento\obj\Debug\net7.0\NucleoPagamento.csproj.CoreCompileInputs.cache
