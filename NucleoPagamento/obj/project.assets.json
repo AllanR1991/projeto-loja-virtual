@@ -9,14 +9,19 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\allan\\.nuget\\packages\\": {}
 =======
     "C:\\Users\\57256639813\\.nuget\\packages\\": {}
 >>>>>>> Caua
+=======
+    "C:\\Users\\32599952859\\.nuget\\packages\\": {}
+>>>>>>> Everton
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\Nova pasta\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
       "projectName": "NucleoPagamento",
@@ -35,6 +40,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\57256639813\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+      "projectName": "NucleoPagamento",
+      "projectPath": "C:\\Users\\32599952859\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+      "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\32599952859\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Everton
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
 >>>>>>> Caua
       ],

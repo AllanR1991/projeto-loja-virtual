@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿﻿using NucleoPagamento.classes;
 using NucleoPagamento;
 
@@ -128,3 +129,10 @@ do
     }
 
 } while (opcao !="5");
+=======
+﻿using NucleoPagamento.classes;
+
+ClassBoleto boleto = new ClassBoleto();
+
+boleto.Registrar();
+>>>>>>> Everton
