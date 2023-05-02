@@ -11,12 +11,7 @@ namespace NucleoPagamento.classes
 
         //Criação de Propriedades
          private  string CodigoDeBarra;
-<<<<<<< HEAD
-=======
-         
 
-        public float Valor = 205.50f;
->>>>>>> Everton
 
         //Criação da função
 

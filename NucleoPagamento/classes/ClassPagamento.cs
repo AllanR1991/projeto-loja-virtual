@@ -8,15 +8,9 @@ namespace NucleoPagamento
 
         public string Cancelar()
         {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/Kamille
             return @$"
             Operação cancelada 
             {Data}";   
         }
-        
-
     }
 }
