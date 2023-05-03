@@ -8,7 +8,9 @@ namespace NucleoPagamento
 
         public string Cancelar()
         {
-            return $"Data do cancelamento da Operação: {Data.ToString("dd/MM/yyyy")}";   
+            return @$"
+            Operação cancelada 
+            {Data:d}";   
         }
     }
 }

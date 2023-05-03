@@ -37,8 +37,19 @@ namespace NucleoPagamento.classes
             Console.Write(texto);
         }
 
+        static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
+        {
+            ExibeMensagem(texto);
+            for (int i = 0; i <= quantidadePontinhos; i++)
+            {
+                ExibeMensagem(".");
+                Thread.Sleep(tempo);
+            }
+        }
+
+
         /*Atributo*/
-        public float Limite {get;private set;} = 6000;
+        public float Limite { get; private set; } = 6000;
         /*Acessando Metodo da classe abstrata*/
         public override void Pagar()
         {
@@ -49,16 +60,28 @@ namespace NucleoPagamento.classes
 
 
 
-            /* Bandeira = PerguntaString("Digite a bandeira do seu Cartao : ");
+            Bandeira = PerguntaString("\nDigite a bandeira do seu cartão : ");
             do
             {
-                NumeroCartao = PerguntaString("Digite o Numero do Cartao : ");
+                NumeroCartao = PerguntaString("\nDigite o número do cartão : ");
+                if (NumeroCartao.Length < 13 || NumeroCartao.Length > 16)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    ExibeMensagemPulandoLinha("\nNúmero do cartão inválido");
+                    Console.ResetColor();
+                }
             } while (NumeroCartao.Length < 13 || NumeroCartao.Length > 16);
-            Titular = PerguntaString("Digite o nome do Titular da conta : ");
+            Titular = PerguntaString("\nDigite o nome do titular da conta : ");
             do
             {
-                Cvv = PerguntaString("Digite o codigo CVV do cartao : ");
-            } while (Cvv.Length < 3 || Cvv.Length > 3); */
+                Cvv = PerguntaString("\nDigite o codigo CVV do cartão : ");
+                if (Cvv.Length < 3 || Cvv.Length > 3)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    ExibeMensagemPulandoLinha("\nNúmero do Cvv inválido");
+                    Console.ResetColor();
+                }
+            } while (Cvv.Length < 3 || Cvv.Length > 3);
             if (Valor > Limite)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -68,18 +91,18 @@ namespace NucleoPagamento.classes
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 ExibeMensagem(@$"
 
 *****************************************
 *                                       *
 *          Juros do Cartão              *
 *                                       *
-* - Pagamento em até 6X no cartao com   *    
+* - Pagamento em até 6X no cartão com   *    
 *   juros de 5%.                        *   
 *                                       *
-* - Pagamento em 7X ate 12X no cartao   *
-*    com juros de 8%                    *
+* - Pagamento em 7X ate 12X no cartão   *
+*   com juros de 8%                     *
 *                                       *
 *****************************************
 
@@ -112,9 +135,13 @@ Em quantas vezes deseja pagar o valor de {Valor.ToString("C", new CultureInfo("p
                     if (Limite > (Valor * 1.05))
                     {
                         ExibeMensagemPulandoLinha(@$"
-O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.05).ToString("C", new CultureInfo("pt-br"))}, sendo cada parcela no valor de {((Valor * 1.05) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
+O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.05).ToString("C", new CultureInfo("pt-br"))}, sendo cada parcela no valor de {((Valor * 1.05) / parcelas).ToString("C", new CultureInfo("pt-br"))}.
 ");
+                        BarraCarregamento("\nSalvando dados", 5, 500);
+                        ExibeMensagem("\n");
+                        ExibeMensagemPulandoLinha("\n_____________________________________________________________");
                         ExibeMensagemPulandoLinha($"{SalvarCartao()}");
+                        ExibeMensagemPulandoLinha("\n_____________________________________________________________");
                     }
                     else
                     {
@@ -129,10 +156,16 @@ O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parce
                     if (Limite > (Valor * 1.08))
                     {
                         ExibeMensagemPulandoLinha(@$"
-O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.08).ToString("C", new CultureInfo("pt-br"))}. Sendo cada parcela no valor de {((Valor * 1.08) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
+O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.08).ToString("C", new CultureInfo("pt-br"))}. Sendo cada parcela no valor de {((Valor * 1.08) / parcelas).ToString("C", new CultureInfo("pt-br"))}.
 ");
+                        BarraCarregamento("\nSalvando dados", 5, 500);
+                        ExibeMensagem("\n");
+                        ExibeMensagemPulandoLinha("\n_____________________________________________________________");
                         ExibeMensagemPulandoLinha($"{SalvarCartao()}");
-                    }else{
+                        ExibeMensagemPulandoLinha("\n_____________________________________________________________");
+                    }
+                    else
+                    {
                         Console.ForegroundColor = ConsoleColor.Red;
                         ExibeMensagemPulandoLinha("\nO Srº(ª) não possui limite suficiente no cartão para compras.\n");
                         Console.ResetColor();

@@ -8,6 +8,49 @@ namespace NucleoPagamento.classes
 {
     public class ClassBoleto : ClassPagamento
     {
+        static string PerguntaString(string pergunta)
+        {
+            Console.WriteLine(pergunta);
+            return Console.ReadLine();
+        }
+
+        static char PerguntaChar(string pergunta)
+        {
+            Console.WriteLine(pergunta);
+            return char.Parse(Console.ReadLine());
+        }
+
+        static int PerguntaInt(string pergunta)
+        {
+            Console.WriteLine(pergunta);
+            return int.Parse(Console.ReadLine());
+        }
+
+        static float PerguntaFloat(string pergunta)
+        {
+            Console.WriteLine(pergunta);
+            return float.Parse(Console.ReadLine());
+        }
+
+        static void ExibeMensagemPulandoLinha(string texto)
+        {
+            Console.WriteLine(texto);
+        }
+
+        static void ExibeMensagem(string texto)
+        {
+            Console.Write(texto);
+        }
+
+        static void BarraCarregamento(string texto, int quantidadePontinhos, int tempo)
+        {
+            ExibeMensagem(texto);
+            for (int i = 0; i <= quantidadePontinhos; i++)
+            {
+                ExibeMensagem(".");
+                Thread.Sleep(tempo);
+            }
+        }
 
         //Criação de Propriedades
          private  string CodigoDeBarra;
@@ -51,10 +94,15 @@ namespace NucleoPagamento.classes
         Random Codigo = new Random();
         Codigo.Next( 0, 9);
         
-        Console.WriteLine($"\nCódigo de barras do boleto: ");
-        
         CodigoDeBarra = $"{Rnd(00001,50000)}.{Rnd(00001,50000)} {Rnd(00001,50000)}.{Rnd(100000,500000)} {Rnd(00001,50000)}.{Rnd(100000,500000)} {Codigo.Next( 0, 9)} {Rnd(10000000,500000000)}{(ValorDesc).ToString("N2", CultureInfo.InvariantCulture).Replace(".","").Replace(",","")}";
+
+        BarraCarregamento("\nGerando boleto", 5, 500);
+        ExibeMensagem("\n");
+
+        ExibeMensagemPulandoLinha("\n_____________________________________________________________");
+        Console.WriteLine($"\nCódigo de barras do boleto: ");
         Console.WriteLine($"{CodigoDeBarra}");
+        ExibeMensagemPulandoLinha("\n_____________________________________________________________");
         
        
     }

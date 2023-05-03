@@ -67,13 +67,11 @@ Dados do cartão salvo com sucesso!
 
 Bandeira: {Bandeira}
 
-Numero do cartao: {NumeroCartao}
+Numero do cartão: {NumeroCartao}
 
 Titular: {Titular}
 
-Cvv: {Cvv}
-
-";
+Cvv: {Cvv}";
         }
     }
 }
