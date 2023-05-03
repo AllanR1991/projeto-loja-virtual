@@ -38,7 +38,7 @@ namespace NucleoPagamento.classes
         }
 
         /*Atributo*/
-        private float Limite = 6000;
+        public float Limite {get;private set;} = 6000;
         /*Acessando Metodo da classe abstrata*/
         public override void Pagar()
         {
@@ -48,20 +48,23 @@ namespace NucleoPagamento.classes
             int maxParcelas = 12;
 
 
-             
-            Bandeira = PerguntaString("Digite a bandeira do seu Cartao : ");
-            do{
+
+            /* Bandeira = PerguntaString("Digite a bandeira do seu Cartao : ");
+            do
+            {
                 NumeroCartao = PerguntaString("Digite o Numero do Cartao : ");
-            }while(NumeroCartao.Length < 13 || NumeroCartao.Length>16);
+            } while (NumeroCartao.Length < 13 || NumeroCartao.Length > 16);
             Titular = PerguntaString("Digite o nome do Titular da conta : ");
-            do{
+            do
+            {
                 Cvv = PerguntaString("Digite o codigo CVV do cartao : ");
-            }while(Cvv.Length<3 || Cvv.Length>3);
+            } while (Cvv.Length < 3 || Cvv.Length > 3); */
             if (Valor > Limite)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 ExibeMensagemPulandoLinha("\nO Srº(ª) não possui limite suficiente no cartão para compras.\n");
                 Console.ResetColor();
+                Valor = 0;
             }
             else
             {
@@ -85,7 +88,7 @@ namespace NucleoPagamento.classes
 
                 do
                 {
-                    
+
                     int.TryParse(PerguntaString(@$"
 Em quantas vezes deseja pagar o valor de {Valor} :
 "), out parcelas);
@@ -106,21 +109,38 @@ Em quantas vezes deseja pagar o valor de {Valor} :
 
                 if (parcelas <= 6)
                 {
-
-                    ExibeMensagemPulandoLinha(@$"
+                    if (Limite > (Valor * 1.05))
+                    {
+                        ExibeMensagemPulandoLinha(@$"
 O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.05).ToString("C", new CultureInfo("pt-br"))}, sendo cada parcela no valor de {((Valor * 1.05) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
 ");
+                        ExibeMensagemPulandoLinha($"{SalvarCartao()}");
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        ExibeMensagemPulandoLinha("\nO Srº(ª) não possui limite suficiente no cartão para compras.\n");
+                        Console.ResetColor();
+                        Valor = 0;
+                    }
                 }
                 else
                 {
-                    ExibeMensagemPulandoLinha(@$"
-O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.08).ToString("C", new CultureInfo("pt-br"))}, sendo cada parcela no valor de {((Valor * 1.08) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
+                    if (Limite > (Valor * 1.08))
+                    {
+                        ExibeMensagemPulandoLinha(@$"
+O valor de {(Valor).ToString("C", new CultureInfo("pt-br"))} parcelado em {parcelas} {vezes}, da um total a pagar de {(Valor * 1.08).ToString("C", new CultureInfo("pt-br"))}. Sendo cada parcela no valor de {((Valor * 1.08) / parcelas).ToString("C", new CultureInfo("pt-br"))} cada.
 ");
+                        ExibeMensagemPulandoLinha($"{SalvarCartao()}");
+                    }else{
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        ExibeMensagemPulandoLinha("\nO Srº(ª) não possui limite suficiente no cartão para compras.\n");
+                        Console.ResetColor();
+                        Valor = 0;
+                    }
+
                 }
-
             }
-
-        } 
-
+        }
     }
 }

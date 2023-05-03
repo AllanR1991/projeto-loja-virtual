@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\41017653836\\.nuget\\packages\\": {}
+    "C:\\Users\\allan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+      "projectUniqueName": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
       "projectName": "NucleoPagamento",
-      "projectPath": "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
-      "packagesPath": "C:\\Users\\41017653836\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
+      "projectPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+      "packagesPath": "C:\\Users\\allan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\projeto-loja-virtual\\NucleoPagamento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\41017653836\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\allan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,16 +59,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p+Tyo0cmXsNbhSQT3T7w9vLc/PM+0j43c7tjCC3HIeskD1KcZsbQfTba9RRXSQ5BJChBTtnwsp4D/FKjYY620g==",
+  "dgSpecHash": "j95Z3z+rIzzvK0LmePvRjVWkM1xJBjKl9vA1btiKlaoqJC809s5KNLEIgOsudCC7M25GJHmAK4QGTQM/lDKf8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
+  "projectFilePath": "C:\\Users\\allan\\OneDrive\\Área de Trabalho\\projeto-loja-virtual\\NucleoPagamento\\NucleoPagamento.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\41017653836\\Desktop\\projeto-loja-virtual\\NucleoPagamento\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

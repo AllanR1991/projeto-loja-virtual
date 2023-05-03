@@ -63,7 +63,7 @@ namespace NucleoPagamento.classes
         public string SalvarCartao()
         {
             return @$"
-Dados salvos com sucesso!
+Dados do cartão salvo com sucesso!
 
 Bandeira: {Bandeira}
 

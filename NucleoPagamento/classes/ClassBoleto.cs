@@ -44,16 +44,16 @@ namespace NucleoPagamento.classes
         public void Registrar()
     {
         float ValorDesc = Valor * 0.88f;
-        Console.WriteLine ($"O valor da sua compra é {(Valor).ToString("C", new CultureInfo("pt-br"))}, para pagamento via boleto com 12% de desconto você pagará: {(ValorDesc).ToString("C", new CultureInfo("pt-br"))}");  
+        Console.WriteLine ($"\nO valor da sua compra é {(Valor).ToString("C", new CultureInfo("pt-br"))}, para pagamento via boleto você ganha 12% de desconto você pagará apenas: {(ValorDesc).ToString("C", new CultureInfo("pt-br"))}");  
 
         Console.WriteLine($" ");
            
         Random Codigo = new Random();
         Codigo.Next( 0, 9);
         
-        Console.WriteLine($"Código de barras do boleto: ");
+        Console.WriteLine($"\nCódigo de barras do boleto: ");
         
-        CodigoDeBarra = $"{Rnd(00001,50000)}.{Rnd(00001,50000)} {Rnd(00001,50000)}.{Rnd(100000,500000)} {Rnd(00001,50000)}.{Rnd(100000,500000)} {Codigo.Next( 0, 9)} {Rnd(10000000,500000000)}{(ValorDesc).ToString("N2", CultureInfo.InvariantCulture).Replace(".","")}";
+        CodigoDeBarra = $"{Rnd(00001,50000)}.{Rnd(00001,50000)} {Rnd(00001,50000)}.{Rnd(100000,500000)} {Rnd(00001,50000)}.{Rnd(100000,500000)} {Codigo.Next( 0, 9)} {Rnd(10000000,500000000)}{(ValorDesc).ToString("N2", CultureInfo.InvariantCulture).Replace(".","").Replace(",","")}";
         Console.WriteLine($"{CodigoDeBarra}");
         
        
