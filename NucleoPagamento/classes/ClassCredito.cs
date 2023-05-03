@@ -90,7 +90,7 @@ namespace NucleoPagamento.classes
                 {
 
                     int.TryParse(PerguntaString(@$"
-Em quantas vezes deseja pagar o valor de {Valor} :
+Em quantas vezes deseja pagar o valor de {Valor.ToString("C", new CultureInfo("pt-br"))} :
 "), out parcelas);
 
                     if (parcelas < minParcelas || parcelas > maxParcelas)

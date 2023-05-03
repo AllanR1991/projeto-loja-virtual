@@ -67,14 +67,14 @@ string opcao;
 ExibeMensagemPulandoLinha(@"
 **************************
 *                        *
-*      Loja Virutal      *
-*       Pamagento        *
+*      Loja Virtual      *
+*       Pagamento        *
 *                        *
 **************************
 ");
 
 /* BarraCarregamento("Processando", 5, 1000); */
- 
+
 /* float valorCompra = PerguntaFloat("Informe o valor da compra : "); */
 
 
@@ -107,30 +107,58 @@ do
 ***************************
 ");
 
-    
+    float testandoValor;
     switch (opcao)
     {
         case "1":
-            boleto.Valor = PerguntaFloat("Informe o valor da compra : ");;
-            boleto.Registrar();
+            do
+            {
+                float.TryParse(PerguntaString("Informe o valor da compra : "), out testandoValor);
+                if (testandoValor > 0)
+                {
+                    boleto.Valor = testandoValor;
+                    boleto.Registrar();
+                }
+            } while (testandoValor <= 0);
+            ExibeMensagem($"{testandoValor}");
             break;
-        case "2":            
-            credito.Valor = PerguntaFloat("Informe o valor da compra : ");;
-            credito.Pagar();
+        case "2":
+            do
+            {
+                float.TryParse(PerguntaString("Informe o valor da compra : "), out testandoValor);
+                if (testandoValor > 0)
+                {
+                    credito.Valor = testandoValor;
+                    credito.Pagar();
+                }
+            } while (testandoValor <= 0);
+
             break;
-        case "3":           
-            debito.Valor = PerguntaFloat("Informe o valor da compra : ");;
-            debito.Pagar();
+        case "3":
+            do
+            {
+                float.TryParse(PerguntaString("Informe o valor da compra : "), out testandoValor);
+                if (testandoValor > 0)
+                {
+                    debito.Valor = testandoValor;
+                    debito.Pagar();
+                }
+            } while (testandoValor <= 0);
             break;
         case "4":
-            if(boleto.Valor != 0){
-                ExibeMensagem($"O Boleto no valor de {(boleto.Valor*0.88f).ToString("C", new CultureInfo("pt-br"))}, foi cancelado com sucesso. ");
+            if (boleto.Valor != 0)
+            {
+                ExibeMensagem($"O Boleto no valor de {(boleto.Valor * 0.88f).ToString("C", new CultureInfo("pt-br"))}, foi cancelado com sucesso. ");
                 ExibeMensagem($"\n{boleto.Cancelar()}");
                 boleto.Valor = 0;
-            }else if(credito.Valor != 0){
-                ExibeMensagem($"O a compra no cartao de credito do Srº(ª) foi com sucesso, favor aguardar o estorno junto a operadora do cartão.");
+            }
+            else if (credito.Valor != 0)
+            {
+                ExibeMensagem($"A compra no cartao de credito do Srº(ª) foi cancelada com sucesso, favor aguardar o estorno junto a operadora do cartão.");
                 ExibeMensagem($"\n{boleto.Cancelar()}");
-            }else if(debito.Valor !=0){
+            }
+            else if (debito.Valor != 0)
+            {
                 ExibeMensagemPulandoLinha($"Realizado estorno na conta conforme os seguintes dados em nosso sistema : ");
                 ExibeMensagemPulandoLinha($"{debito.SalvarCartao()}");
                 ExibeMensagem($"\n{debito.Cancelar()}");
@@ -148,7 +176,7 @@ do
             break;
     }
 
-} while (/* opcao !="1" && opcao !="2" && opcao !="3" && */ opcao !="5") ;
+} while (/* opcao !="1" && opcao !="2" && opcao !="3" && */ opcao != "5");
 
 
 /* do
