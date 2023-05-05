@@ -1,4 +1,4 @@
-# projeto-loja-virtual
+# projeto-loja-virtual TESTE PULL REQUEST
 Este repositorio é dedicado a atividade em grupo realizada dentro do instuição Senai Informatica, sobre a linguagem C# com POO
 
 Abaixo o diagrama com o qual estamos tendo como base para criação das classes que estão contidas neste repositorio, foram criados cada branch para desenvolvedor.
